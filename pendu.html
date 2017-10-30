@@ -1,0 +1,99 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<title>Pendu c'est bien !</title>
+ </head>
+ <body>
+ 	
+<!-- Jeu de pendu en ES
+5 mots pré-enregistrés
+Programme choisit un mot. 
+Interface HTML avec un champs de saisi. 
+pour valider un lettre. 
+10 tentatives possibles.  -->
+
+<h2 class="result"></h2>
+<input type="text" name="">
+
+
+<h3 class="count"></h3>
+
+<button class="submit">Submit</button>
+
+
+<script type="text/javascript">
+	
+	var mot = 
+	[
+	'exercice',
+	'gibson',
+	'partir'
+	
+	];
+
+	var valeur;
+
+	//compteur initiate
+	var count = 10;
+	
+	//random selection
+	var selector = Math.floor(((mot.length+1)-0)*Math.random()+0);
+	var selection = mot[selector];
+
+	//treatment of selection before display
+	var hidden_count = selection.length;
+	var tiret = " _ ";
+	var hidden_display = tiret.repeat(hidden_count);
+
+
+	var result = document.querySelector('.result');
+
+	result.innerHTML = hidden_display;
+
+
+	var counting = document.querySelector('.count');
+
+	counting.innerHTML = 'chances restantes : ' + count;
+
+	var tentative = document.querySelector('input');
+	var btn = document.querySelector('button');
+
+
+
+	var triche = 'i';
+
+
+	btn.addEventListener('click', function() {
+		valeur = tentative.innerHTML = tentative.value;
+
+		for (var i = 0; i < selection.length; i++) {
+			if();
+		}
+		return valeur;
+
+	});
+
+	var comparator = tentative.value;
+
+	console.log(valeur);
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	 
+
+</script>
+ </body>
+ </html>
